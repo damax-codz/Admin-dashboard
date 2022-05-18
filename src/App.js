@@ -11,9 +11,9 @@ import Client from './components/Dashboard/Clients/Client';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename='/Admin-dashboard'>
       <Routes>
-        <Route  path='/' element={<Signup />} />
+        <Route  path='/' exact element={<Signup />} />
         <Route path='dashboard' element={<Mainpage />} >
         <Route path='home' element={<Home />} />
         <Route path='product' element={<Products />} />      
