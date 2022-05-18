@@ -1,0 +1,294 @@
+.homepage{
+    width: 100%;
+    display: flex;
+
+}
+.left-nav{
+    width: 15%;
+    height: 100vh;
+    background-color: white;
+    overflow: scroll;
+    z-index: 100;
+    box-shadow: 0.5px 1px 1px 1px rgba(0, 0, 0, 0.059);
+    position: sticky;
+    top: 0;
+    transition: 0.5s;
+}
+.left-nav .title{
+    margin: 30px 0px 10px 20px ;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+.left-nav .title span{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(39,173,252);
+    display: block;
+    border-radius: 50%;
+    margin: 0px 5px 0px 0px;
+}
+.left-nav ul{
+    margin: 50px 0px 0px 20px;
+    padding-inline-start: 0;
+}
+.left-nav ul li{
+    list-style-type: none;
+    font-size: 14px;
+    margin: 20px 0px 0px 0px;
+    width: 80%;
+    padding: 10px 10px;
+    border-radius: 5px;
+    transition: 0.2s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.691);
+}
+.left-nav ul li a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+}
+.left-nav ul li p{
+    margin: 0px 0px 0px 10px;
+    padding: 0%;
+}
+
+.left-nav ul li:hover{
+    background-color: rgba(182, 189, 189, 0.19);
+    color: rgb(39,173,252);
+
+}
+.left-nav ul li a:hover{
+    color: #27adfc;
+}
+.left-nav .check{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(230,244,253);
+    border: 1px solid rgb(230,244,253);
+    width: 80%;
+    height: 170px;
+    margin: 90px 0px 20px 20px;
+    border-radius: 10px;
+}
+
+.left-nav .check img{
+    width: 150px;
+    height: 150px;
+    margin: -70px 0px 0px 0px;
+    padding: 0%;
+}
+.left-nav .check p{
+    font-size: 12px;
+    margin-top: 0%;
+    padding-top: 0%;
+}
+.left-nav .check button{
+    background-color: rgb(39,173,252);
+    border: 1px solid rgb(39,173,252);
+    border-radius: 5px;
+    color: white;
+    padding: 7px 10px;
+    cursor: pointer;
+    
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 3px;
+  }
+  ::-webkit-scrollbar-track {
+    background:rgb(255, 255, 255);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(51, 50, 50, 0);
+    border-radius: 50px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(85, 85, 85, 0.613);
+  }
+
+
+
+.right-page{
+    width: 60%;
+    background-color: rgb(246,250,255);
+
+}
+.right-page .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 10px 0px 20px;
+}
+.right-page .top span h2{
+   margin: 0%;
+   padding: 0%;
+   text-transform: capitalize;
+   font-weight: 500;
+}
+.right-page .top span p{
+    margin: 0%;
+    padding: 0%;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.522);
+}
+.right-page .top input{
+    height: 30px;
+    width: 280px;
+    border: 1px solid rgba(85, 85, 85, 0.228);
+    display: block;
+    padding: 9px 4px 9px 40px;
+    border-radius: 10px;
+
+    background: white url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+}
+.right-page .top input::placeholder{
+    color: rgba(85, 85, 85, 0.597);
+}
+.right-page .top input:focus{
+    border: none;
+    
+}
+
+.notification {
+    width: 25%;
+    overflow: scroll;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.notification .profile{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 80%;
+   margin: 20px 5px 0px 5px;
+}
+.notification .profile span:nth-child(2){
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.notification .profile span:nth-child(2) img{
+    width: 40px ;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0px 0px 0px 10px;
+}
+.notification .wallet{
+    width: 80%;
+    height: 140px;
+    border: 1px solid rgba(39, 174, 252, 0.752);
+    margin: 40px 5px 0px 5px;
+    background-color: rgba(37, 155, 223, 0.836);
+    border-radius: 10px;
+    display: flex;
+    
+}
+.notification .wallet div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.wallet div:nth-child(2){
+    display: flex;
+    margin: 0px 0px 0px 60px;
+}
+.wallet div:nth-child(2) span:nth-child(odd){
+    width: 2px;
+    height: 50px;
+    background-color: white;
+}
+.wallet div:nth-child(2) span:nth-child(even){
+    width: 2px;
+    height: 40px;
+    background-color: white;
+}
+
+.wallet p{
+    color: white;
+    font-weight: 400;
+    padding: 0%;
+    margin: 10px 0px 10px 10px;
+}
+.wallet span{
+    color: white;
+    font-size: 30px;
+    margin: 0px 0px 10px 10px;
+    font-weight: 4  00;
+}
+.wallet button{
+    margin: 0px 0px 10px 10px;
+    padding: 10px 30px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.transactions{
+    width: 80%;
+    color: rgba(0, 0, 0, 0.722);
+    margin: 30px 5px 0px 5px;
+    
+}
+.hor{
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    color: rgba(37, 155, 223, 0.836);
+    font-weight: 400;
+    margin: 20px 0px 0px 0px;
+}
+.transactions span img{
+    width: 40px ;
+    height: 40px;
+    border-radius: 50%;
+}
+.transactions span span {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.transactions span span h5{
+    padding: 0%;
+    margin: 0%;
+    color: black;
+}
+.transactions span span p{
+    margin: 0%;
+    padding: 0%;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.561);
+}
+
+.menubutton{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: rgb(39,173,252);
+    margin: 0px 0px 0px 10px;
+    display: none;
+}
+
+
+@media (max-width:800px) {
+    .notification{display: none;width: 0%;}
+    .right-page{width: 100%;}
+    .left-nav{width: 0%;position: absolute; }
+    .menubutton{display: flex;}
+}
+
+@media (max-width:500px) {
+    .right-page .top input{display: none;}
+    
+}
