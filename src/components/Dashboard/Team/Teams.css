@@ -1,0 +1,54 @@
+ .team{
+    box-sizing: border-box;
+    width: 95%;
+}
+.team-set{
+    border: 0.25px solid rgba(39, 174, 252, 0.265);
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    font-weight: 700;
+    margin: 10px 0px 0px 20px;
+    background-color: white;
+}
+.team-tab{
+    padding: 0 20px;
+}
+.team-tab table{
+    width: 100%;
+    text-align: left;
+}
+
+.team-tab table th{
+    padding: 30px 70px 40px 0px;
+    opacity: 0.56;
+    font-weight: 400;
+    text-transform: capitalize !important;
+}
+ 
+ .team img{
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    object-fit: cover;
+
+} 
+.team table tbody tr{
+   padding: 20px 0px 0px 0px;
+   align-items: center;
+}
+.team table tbody tr td{
+    padding: 10px 0;
+}
+.team h2{
+    margin: 70px 0px 30px 20px;
+}
+
+
+
+@media (max-width:500px) {
+    .team-tab table th{padding: 30px 50px 40px 0px;font-size: 14px;}
+    .team-tab table th:nth-child(4){display: none;}
+    .team table tbody tr td:nth-child(4){display: none;}
+}

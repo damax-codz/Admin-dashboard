@@ -1,0 +1,64 @@
+.client{
+    box-sizing: border-box;
+}
+.client h2{
+    margin: 70px 0px 30px 20px;
+}
+.client-set{
+    border: 0.25px solid rgba(39, 174, 252, 0.265);
+    box-sizing: border-box;
+    box-shadow: 6px 4px 38px 4px rgba(0, 0, 0, 0.02);
+    border-radius: 10px;
+    width: 95%;
+    padding: 15px 0px;
+    margin: 10px 0px 0px 20px;
+    display: flex;
+    font-weight: 700;
+    background-color: white;
+}
+.client-tab{
+    padding: 0 20px;
+}
+.client table{
+    width: 100%;
+    text-align: left;
+}
+.client thead tr{
+    display: flex;
+    align-items: center;
+}
+.client thead tr th{
+    padding: 10px 90px 20px 0px;
+    opacity: 0.56;
+    font-weight: 400;
+    text-transform: capitalize !important;
+}
+
+
+.client tbody tr td{
+    padding: 20px 60px 0px 0px;
+    text-align: start;
+}
+.client tbody tr{
+    display: flex;
+    align-items: center;
+}
+.client tbody img{
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    object-fit: cover;
+
+}
+span{
+    position: top;
+}
+
+
+
+@media (max-width:500px) {
+    .client table tr th{padding: 30px 50px 40px 0px;font-size: 14px;}
+    .client table th:nth-child(4){display: none;}
+    .client table tbody tr td:nth-child(4){display: none;}
+    .client tbody tr td{padding: 20px 40px 0px 0px;}
+}

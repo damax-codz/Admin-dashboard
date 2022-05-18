@@ -63,14 +63,18 @@ const slide =()=>{
             </Link>
           </li>
           <li onClick={window.innerWidth<800 ?slide:null}>
+          <Link to="team">
             {" "}
             <FontAwesomeIcon icon={faPeopleGroup} />
             <p>Team</p>
+          </Link>
           </li>
           <li onClick={window.innerWidth<800 ?slide:null}>
+          <Link to="client">
             {" "}
             <FontAwesomeIcon icon={faUserTie} />
             <p>Clients</p>
+            </Link>
           </li>
           <li onClick={window.innerWidth<800 ?slide:null}>
           <Link to="product">
@@ -90,7 +94,7 @@ const slide =()=>{
         <div className="check">
           <img src={hand} alt="hand" />
           <p>check on your clients everyday</p>
-          <button>check clients</button>
+           <Link to='client'><button>check clients</button></Link>
         </div>
       </section>
       <section className="right-page" >

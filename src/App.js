@@ -4,6 +4,8 @@ import { BrowserRouter ,Routes, Route } from 'react-router-dom'
 import Mainpage from './components/MainPage/Mainpage';
 import Home from './components/Dashboard/Home/Home';
 import Products from './components/Dashboard/Products/Products';
+import Team from './components/Dashboard/Team/Team';
+import Client from './components/Dashboard/Clients/Client';
 
 
 function App() {
@@ -14,7 +16,9 @@ function App() {
         <Route path='/' element={<Signup />} />
         <Route path='dashboard' element={<Mainpage />} >
         <Route path='home' element={<Home />} />
-        <Route path='product' element={<Products />} />        
+        <Route path='product' element={<Products />} />      
+        <Route path='client' element={<Client />} />
+        <Route path='team' element={<Team />} />        
         </Route>
       </Routes>
       </BrowserRouter>
