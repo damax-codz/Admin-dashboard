@@ -15,7 +15,7 @@
 .highlights div{
     display: flex;
     justify-content: space-between;
-    width: 20%;
+    width: 25%;
     background-color: white;
     padding: 5px 20px;
     border-radius: 10px;
@@ -74,4 +74,5 @@
     .geochart{flex-direction: column;align-items: center;}
     .geochart div:nth-child(1){width: 100%;}
     .newcustomer{width: 100%;}
+    /* .newcustomer p{padding: 10px 25px;} */
 }
