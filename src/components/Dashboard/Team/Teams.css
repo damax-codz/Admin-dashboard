@@ -1,9 +1,9 @@
- .container{
+ .team{
     box-sizing: border-box;
   
   
 }
-.set{
+.team-set{
     border: 0.25px solid rgb(47, 7, 224);
     box-sizing: border-box;
     box-shadow: 6px 4px 38px 4px rgba(0, 0, 0, 0.02);
@@ -15,7 +15,7 @@
     margin: 0 25px;
     font-weight: 700;
 }
-.tab{
+.team-tab{
     padding: 0 20px;
 }
 .table{
@@ -40,9 +40,9 @@ th{
 }
 
  img{
-    width: 32px;
-    height: 32px;
-    border-radius: 50px;
+    width: 120px;
+    height: 130px;
+    border-radius: 30px;
     object-fit: cover;
     margin-right: 10px;
 

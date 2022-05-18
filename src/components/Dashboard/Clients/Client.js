@@ -9,7 +9,7 @@ const Client = () => {
      
   const [Client, setClient] = useState([])
 
-  const url = process.env.REACT_APP_CLIENT_URL;
+  const url = 'https://fakerapi.it/api/v1/companies?_quantity=10';
 
   useEffect(() => {
     fetch(url)
@@ -21,10 +21,10 @@ const Client = () => {
   console.log(Client)
 
   return (
-      <div className='container'>
-         <div className="set">
+      <div className='client'>
+         <div className="client-set">
 
-<div  className="tab">
+<div  className="client-tab">
    <table>
        <thead>
            <tr>

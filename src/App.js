@@ -1,7 +1,7 @@
 import Team  from './components/Dashboard/Team/Team';
 import './App.css';
 import Client from './components/Dashboard/Clients/Client';
-import Products from './components/Dashboard/Products/Products';
+
 
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
         
       <Team />
      <Client />
-      <Products /> 
+      
     </div>
   );
 }
