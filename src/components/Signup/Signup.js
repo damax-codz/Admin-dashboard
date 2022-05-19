@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './Signup.css'
 import user from '../../images/user.png'
 import { ToastContainer, toast } from 'react-toastify';
+import { Link } from 'react-router-dom';
 
 
 const Signup = () => {
@@ -23,7 +24,7 @@ const Signup = () => {
   const handleSubmit =()=>{
       if(formFilled){
           toast.success('Signed in successfully')
-          setTimeout( ()=>window.location ='/Admin-dashboard/dashboard/home',3000 )
+        //   setTimeout( ()=>window.location ='/dashboard/home',3000 )
           sessionStorage.setItem('loginData',JSON.stringify({...form}))
       }
       else{
@@ -59,7 +60,7 @@ const Signup = () => {
                 <input type='password' name='password' placeholder='Password' onChange={handleChange} />
                 <p>Don't have an account ? <span>Signup</span> </p>
              </form>
-             <button  style={{backgroundColor:formFilled?'rgb(98, 120, 248)':'white',color:formFilled?'white':'black'}} onClick={handleSubmit}>SIGNUP NOW</button>
+           <Link to='/dashboard/home'><button  style={{backgroundColor:formFilled?'rgb(98, 120, 248)':'white',color:formFilled?'white':'black'}} onClick={handleSubmit}>SIGNUP NOW</button></Link>  
            </div>
            
         </div>
