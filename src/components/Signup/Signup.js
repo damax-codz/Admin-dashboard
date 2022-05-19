@@ -23,7 +23,7 @@ const Signup = () => {
   const handleSubmit =()=>{
       if(formFilled){
           toast.success('Signed in successfully')
-          setTimeout( ()=>window.location ='/dashboard/home',3000 )
+          setTimeout( ()=>window.location ='/Admin-dashboard/dashboard/home',3000 )
           sessionStorage.setItem('loginData',JSON.stringify({...form}))
       }
       else{
