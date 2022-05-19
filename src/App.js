@@ -14,7 +14,7 @@ function App() {
       <BrowserRouter basename='/Admin-dashboard' >
       <Routes>
         <Route  path='/' index element={<Signup />} />
-        <Route path='dashboard' element={<Mainpage />} >
+        <Route path='/dashboard' element={<Mainpage />} >
         <Route path='home' element={<Home />} />
         <Route path='product' element={<Products />} />      
         <Route path='client' element={<Client />} />
