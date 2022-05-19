@@ -1,6 +1,6 @@
 {
   "name": "admin-dashboard",
-  "hompage": "https://damax-codz.github.io/Admin-dashboard",
+  "homepage": "https://damax-codz.github.io/Admin-dashboard",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
